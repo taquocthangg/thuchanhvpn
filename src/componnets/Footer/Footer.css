@@ -1,63 +1,108 @@
-.contact-wrapper{
+.contact-wrapper {
     display: flex;
 }
-.contact{
+
+.contact {
     width: 1110px;
     margin: 0 auto;
     display: flex;
     background: url('../../img/conntent/bg.3fdd397c.jpg');
-    box-shadow: 0 9px 68px 0 rgba(62,57,107,.2);
+    box-shadow: 0 9px 68px 0 rgba(62, 57, 107, .2);
     border-radius: 10px;
     padding: 50px;
     justify-content: space-between;
-    align-self: center;}
-.contact__content-title{
-    font-family: "Poppins",sans-serif;
-    color:#5ba5fb;
+    align-self: center;
+}
+
+.contact__content-title {
+    font-family: "Poppins", sans-serif;
+    color: #5ba5fb;
     line-height: 1.4;
     font-weight: 500;
     font-size: 1.75rem;
 }
-.contact__content-name{
-    font-family: "Poppins",sans-serif;
-    color:#13287e;
+
+.contact__content-name {
+    font-family: "Poppins", sans-serif;
+    color: #13287e;
     line-height: 1.4;
     font-weight: 600;
     font-size: 1.75rem;
 }
-.footer{
-    background: linear-gradient(182deg,#2685ed,#2f69ff);
+
+.footer {
+    background: linear-gradient(182deg, #2685ed, #2f69ff);
     height: 500px;
     margin-top: -90px;
     color: #fff;
 }
-.footer__wrapper{
+
+.footer__wrapper {
     padding-top: 220px;
     display: flex;
     gap: 20px;
     justify-content: space-around;
 }
-.footer__box-des{
+
+.footer__box-des {
     max-width: 350px;
     color: #efebeb;
     font-size: 14px;
     padding: 20px 0;
 }
-.footer__box-icon i{
+
+.footer__box-icon i {
     background-color: #fff;
     color: #2685ed;
     padding: 5px;
     cursor: pointer;
     border-radius: 5px;
 }
-.footer__box{
+
+.footer__box {
     cursor: pointer;
 }
-.footer__box-title{
+
+.footer__box-title {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-top: 10px;
     color: #efebeb;
     font-size: 14px;
+}
+
+@media only screen and (max-width: 760px) {
+    .contact {
+        display: block;
+        width: 90%;
+    }
+
+    .contact-wrapper {
+        justify-content: center;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .footer__wrapper {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 130px;
+        padding-bottom: 100px;
+    }
+
+    .footer__box {
+        margin-top: 20px;
+    }
+
+    .footer__box-logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer__box-des {
+        line-height: 25px;
+    }
 }

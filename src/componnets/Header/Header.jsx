@@ -2,8 +2,6 @@
 ========================= Trang Chủ =========================
 =                           Author                          =
 =                         Quốc Thắng                        =
-=                            And                            =
-=                         Tiến Khoái                        =
 =============================================================
 */
 import React, { useState } from 'react';
@@ -21,7 +19,6 @@ const Header = (props) => {
   
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
-  const { pathname } = useLocation();
   const [color, Setcolor] = useState(false);
   const changeColor = () =>{
     if(window.scrollY >=30){
@@ -32,7 +29,8 @@ const Header = (props) => {
     }
   }
   window.addEventListener('scroll',changeColor)
-  if (pathname === "/login" || pathname === "/phong-kham-phong-mach/dang-nhap"|| pathname === "/phong-kham-phong-mach/dang-ky") return null;
+  const { pathname } = useLocation();
+  if (pathname === "/login") return null;
   return (
     <>
         <div className={color ? 'navbar navbar_bg ':'navbar'}>
@@ -118,7 +116,7 @@ const Header = (props) => {
                       className="nav-links"
                       onClick={handleClick}
                     >
-                     <i className="icon__mobile"><BsPatchQuestion/></i> Login
+                      <div className="login">Login</div>
                     </NavLink>
                   </li>
                 </ul>

@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/main.css'
 import '../css/Home.css'
+import '../css/responsive.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -21,6 +22,17 @@ const settings = {
   infinite: true,
   slidesToShow: 3,
   slidesToScroll: 3,
+  arrows: false,
+  autoplay: true,
+  speed: 500,
+  autoplaySpeed: 2000,
+  cssEase: "linear"
+};
+const mobile = {
+  dots: false,
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
   arrows: false,
   autoplay: true,
   speed: 500,
@@ -380,170 +392,338 @@ export const Home = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.
             </div>
           </div>
-          <Slider {...settings}>
-              <div className="test__user">
-                <div className="test-user-wrapper">
-                  <div className="test__user-star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  </div>
-                  <div className="test__user-des des_min">
-                    Lorem ipsum dolor sit amet voluptatum consectetur adipisicing elit.voluptatum Incidunt nulla nam voluptatum deleniti earum natus?
-                  </div>
-                  <div className="test__user-avt">
-                    <div className="test__user-avt_img">
-                      <img src={avt1} alt="" />
+          <div className="slide__pc">
+            <Slider {...settings}>
+                <div className="test__user">
+                  <div className="test-user-wrapper">
+                    <div className="test__user-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                     </div>
-                    <div className="test__user-avt-show">
-                      <div className="user-avt-show-name">
-                      Sunny Khan
-                      </div>
-                      <div className="user-avt-show-work des_min">
-                      One of our Clients
-                      </div>
+                    <div className="test__user-des des_min">
+                      Lorem ipsum dolor sit amet voluptatum consectetur adipisicing elit.voluptatum Incidunt nulla nam voluptatum deleniti earum natus?
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div className="test__user">
-                <div className="test-user-wrapper">
-                  <div className="test__user-star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  </div>
-                  <div className="test__user-des des_min">
-                    Lorem ipsum dolor sit amet voluptatum consectetur adipisicing elit.voluptatum Incidunt nulla nam voluptatum deleniti earum natus?
-                  </div>
-                  <div className="test__user-avt">
-                    <div className="test__user-avt_img">
-                      <img src={avt2} alt="" />
-                    </div>
-                    <div className="test__user-avt-show">
-                      <div className="user-avt-show-name">
-                      Sunny Khan
+                    <div className="test__user-avt">
+                      <div className="test__user-avt_img">
+                        <img src={avt1} alt="" />
                       </div>
-                      <div className="user-avt-show-work des_min">
-                      One of our Clients
+                      <div className="test__user-avt-show">
+                        <div className="user-avt-show-name">
+                        Sunny Khan
+                        </div>
+                        <div className="user-avt-show-work des_min">
+                        One of our Clients
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="test__user">
-                <div className="test-user-wrapper">
-                  <div className="test__user-star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  </div>
-                  <div className="test__user-des des_min">
-                    Lorem ipsum dolor sit amet voluptatum consectetur adipisicing elit.voluptatum Incidunt nulla nam voluptatum deleniti earum natus?
-                  </div>
-                  <div className="test__user-avt">
-                    <div className="test__user-avt_img">
-                      <img src={avt3} alt="" />
+                <div className="test__user">
+                  <div className="test-user-wrapper">
+                    <div className="test__user-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                     </div>
-                    <div className="test__user-avt-show">
-                      <div className="user-avt-show-name">
-                      Sunny Khan
-                      </div>
-                      <div className="user-avt-show-work des_min">
-                      One of our Clients
-                      </div>
+                    <div className="test__user-des des_min">
+                      Lorem ipsum dolor sit amet voluptatum consectetur adipisicing elit.voluptatum Incidunt nulla nam voluptatum deleniti earum natus?
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div className="test__user">
-                <div className="test-user-wrapper">
-                  <div className="test__user-star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  </div>
-                  <div className="test__user-des des_min">
-                    Lorem ipsum dolor sit amet voluptatum consectetur adipisicing elit.voluptatum Incidunt nulla nam voluptatum deleniti earum natus?
-                  </div>
-                  <div className="test__user-avt">
-                    <div className="test__user-avt_img">
-                      <img src={avt1} alt="" />
-                    </div>
-                    <div className="test__user-avt-show">
-                      <div className="user-avt-show-name">
-                      Sunny Khan
+                    <div className="test__user-avt">
+                      <div className="test__user-avt_img">
+                        <img src={avt2} alt="" />
                       </div>
-                      <div className="user-avt-show-work des_min">
-                      One of our Clients
+                      <div className="test__user-avt-show">
+                        <div className="user-avt-show-name">
+                        Sunny Khan
+                        </div>
+                        <div className="user-avt-show-work des_min">
+                        One of our Clients
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="test__user">
-                <div className="test-user-wrapper">
-                  <div className="test__user-star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  </div>
-                  <div className="test__user-des des_min">
-                    Lorem ipsum dolor sit amet voluptatum consectetur adipisicing elit.voluptatum Incidunt nulla nam voluptatum deleniti earum natus?
-                  </div>
-                  <div className="test__user-avt">
-                    <div className="test__user-avt_img">
-                      <img src={avt2} alt="" />
+                <div className="test__user">
+                  <div className="test-user-wrapper">
+                    <div className="test__user-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                     </div>
-                    <div className="test__user-avt-show">
-                      <div className="user-avt-show-name">
-                      Sunny Khan
-                      </div>
-                      <div className="user-avt-show-work des_min">
-                      One of our Clients
-                      </div>
+                    <div className="test__user-des des_min">
+                      Lorem ipsum dolor sit amet voluptatum consectetur adipisicing elit.voluptatum Incidunt nulla nam voluptatum deleniti earum natus?
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div className="test__user">
-                <div className="test-user-wrapper">
-                  <div className="test__user-star">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  </div>
-                  <div className="test__user-des des_min">
-                    Lorem ipsum dolor sit amet voluptatum consectetur adipisicing elit.voluptatum Incidunt nulla nam voluptatum deleniti earum natus?
-                  </div>
-                  <div className="test__user-avt">
-                    <div className="test__user-avt_img">
-                      <img src={avt3} alt="" />
-                    </div>
-                    <div className="test__user-avt-show">
-                      <div className="user-avt-show-name">
-                      Sunny Khan
+                    <div className="test__user-avt">
+                      <div className="test__user-avt_img">
+                        <img src={avt3} alt="" />
                       </div>
-                      <div className="user-avt-show-work des_min">
-                      One of our Clients
+                      <div className="test__user-avt-show">
+                        <div className="user-avt-show-name">
+                        Sunny Khan
+                        </div>
+                        <div className="user-avt-show-work des_min">
+                        One of our Clients
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-          </Slider>
+                <div className="test__user">
+                  <div className="test-user-wrapper">
+                    <div className="test__user-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div className="test__user-des des_min">
+                      Lorem ipsum dolor sit amet voluptatum consectetur adipisicing elit.voluptatum Incidunt nulla nam voluptatum deleniti earum natus?
+                    </div>
+                    <div className="test__user-avt">
+                      <div className="test__user-avt_img">
+                        <img src={avt1} alt="" />
+                      </div>
+                      <div className="test__user-avt-show">
+                        <div className="user-avt-show-name">
+                        Sunny Khan
+                        </div>
+                        <div className="user-avt-show-work des_min">
+                        One of our Clients
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="test__user">
+                  <div className="test-user-wrapper">
+                    <div className="test__user-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div className="test__user-des des_min">
+                      Lorem ipsum dolor sit amet voluptatum consectetur adipisicing elit.voluptatum Incidunt nulla nam voluptatum deleniti earum natus?
+                    </div>
+                    <div className="test__user-avt">
+                      <div className="test__user-avt_img">
+                        <img src={avt2} alt="" />
+                      </div>
+                      <div className="test__user-avt-show">
+                        <div className="user-avt-show-name">
+                        Sunny Khan
+                        </div>
+                        <div className="user-avt-show-work des_min">
+                        One of our Clients
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="test__user">
+                  <div className="test-user-wrapper">
+                    <div className="test__user-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div className="test__user-des des_min">
+                      Lorem ipsum dolor sit amet voluptatum consectetur adipisicing elit.voluptatum Incidunt nulla nam voluptatum deleniti earum natus?
+                    </div>
+                    <div className="test__user-avt">
+                      <div className="test__user-avt_img">
+                        <img src={avt3} alt="" />
+                      </div>
+                      <div className="test__user-avt-show">
+                        <div className="user-avt-show-name">
+                        Sunny Khan
+                        </div>
+                        <div className="user-avt-show-work des_min">
+                        One of our Clients
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </Slider>
+          </div>
+          <div className="slide__mobile">
+            <Slider {...mobile}>
+                <div className="test__user">
+                  <div className="test-user-wrapper">
+                    <div className="test__user-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div className="test__user-des des_min">
+                      Lorem ipsum dolor sit amet voluptatum consectetur adipisicing elit.voluptatum Incidunt nulla nam voluptatum deleniti earum natus?
+                    </div>
+                    <div className="test__user-avt">
+                      <div className="test__user-avt_img">
+                        <img src={avt1} alt="" />
+                      </div>
+                      <div className="test__user-avt-show">
+                        <div className="user-avt-show-name">
+                        Sunny Khan
+                        </div>
+                        <div className="user-avt-show-work des_min">
+                        One of our Clients
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="test__user">
+                  <div className="test-user-wrapper">
+                    <div className="test__user-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div className="test__user-des des_min">
+                      Lorem ipsum dolor sit amet voluptatum consectetur adipisicing elit.voluptatum Incidunt nulla nam voluptatum deleniti earum natus?
+                    </div>
+                    <div className="test__user-avt">
+                      <div className="test__user-avt_img">
+                        <img src={avt2} alt="" />
+                      </div>
+                      <div className="test__user-avt-show">
+                        <div className="user-avt-show-name">
+                        Sunny Khan
+                        </div>
+                        <div className="user-avt-show-work des_min">
+                        One of our Clients
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="test__user">
+                  <div className="test-user-wrapper">
+                    <div className="test__user-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div className="test__user-des des_min">
+                      Lorem ipsum dolor sit amet voluptatum consectetur adipisicing elit.voluptatum Incidunt nulla nam voluptatum deleniti earum natus?
+                    </div>
+                    <div className="test__user-avt">
+                      <div className="test__user-avt_img">
+                        <img src={avt3} alt="" />
+                      </div>
+                      <div className="test__user-avt-show">
+                        <div className="user-avt-show-name">
+                        Sunny Khan
+                        </div>
+                        <div className="user-avt-show-work des_min">
+                        One of our Clients
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="test__user">
+                  <div className="test-user-wrapper">
+                    <div className="test__user-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div className="test__user-des des_min">
+                      Lorem ipsum dolor sit amet voluptatum consectetur adipisicing elit.voluptatum Incidunt nulla nam voluptatum deleniti earum natus?
+                    </div>
+                    <div className="test__user-avt">
+                      <div className="test__user-avt_img">
+                        <img src={avt1} alt="" />
+                      </div>
+                      <div className="test__user-avt-show">
+                        <div className="user-avt-show-name">
+                        Sunny Khan
+                        </div>
+                        <div className="user-avt-show-work des_min">
+                        One of our Clients
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="test__user">
+                  <div className="test-user-wrapper">
+                    <div className="test__user-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div className="test__user-des des_min">
+                      Lorem ipsum dolor sit amet voluptatum consectetur adipisicing elit.voluptatum Incidunt nulla nam voluptatum deleniti earum natus?
+                    </div>
+                    <div className="test__user-avt">
+                      <div className="test__user-avt_img">
+                        <img src={avt2} alt="" />
+                      </div>
+                      <div className="test__user-avt-show">
+                        <div className="user-avt-show-name">
+                        Sunny Khan
+                        </div>
+                        <div className="user-avt-show-work des_min">
+                        One of our Clients
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="test__user">
+                  <div className="test-user-wrapper">
+                    <div className="test__user-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div className="test__user-des des_min">
+                      Lorem ipsum dolor sit amet voluptatum consectetur adipisicing elit.voluptatum Incidunt nulla nam voluptatum deleniti earum natus?
+                    </div>
+                    <div className="test__user-avt">
+                      <div className="test__user-avt_img">
+                        <img src={avt3} alt="" />
+                      </div>
+                      <div className="test__user-avt-show">
+                        <div className="user-avt-show-name">
+                        Sunny Khan
+                        </div>
+                        <div className="user-avt-show-work des_min">
+                        One of our Clients
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </Slider>
+          </div>
         </div>
       </section>
     </main>

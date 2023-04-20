@@ -1,7 +1,10 @@
 import React from 'react'
 import './Footer.css'
 import logo from '../../img/logo.png'
+import { useLocation } from "react-router-dom";
 const Footer = () => {
+  const { pathname } = useLocation();
+  if (pathname === "/login") return null;
   return (
     <main>
       <div className="container">
