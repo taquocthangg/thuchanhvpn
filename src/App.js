@@ -13,6 +13,8 @@ import Login from "./page/Login";
 import { Pricing } from "./page/Pricing";
 import { Services } from "./page/Services";
 import ScrollToTop from "./componnets/ScrollToTop";
+import { Home1 } from "./page/Home1";
+import { Home2 } from "./page/Home2";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <ScrollToTop>
           <Routes>
             <Route path='/' element={<Home />} />
+            <Route path='home1' element={<Home1 />} />
+            <Route path='home2' element={<Home2 />} />
             <Route path='about' element={<About />} />
             <Route path='services' element={<Services />} />
             <Route path='faq' element={<FAQ />} />

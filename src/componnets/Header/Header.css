@@ -36,6 +36,23 @@
     margin: 20px;
 }
 
+.sub-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 120px;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    z-index: 99;
+}   
+.sub-menu a{
+    color: #212529;
+}
+.title-item{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 .nav__bot ul {
     list-style: none;
     display: flex;
@@ -118,7 +135,10 @@
         margin-top: 5px;
         visibility: hidden;
     }
-
+    .sub-menu{
+        width: 100%;
+        left: 0;
+    }
     .navbar {
         background-color: #d7dfef;
     }

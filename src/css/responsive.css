@@ -5,6 +5,12 @@
     .what__item {
         width: 280px;
     }
+    .home1__logo{
+        display: none !important;
+    }
+    .home2__logo{
+        display: none !important;
+    }
 }
 @media only screen and (max-width: 1024px){
     .nav-container{

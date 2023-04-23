@@ -34,6 +34,7 @@ const mobile = {
 const About = () => {
   return (
     <main>
+      {/* Phần about */}
       <section className='about' >
         <div className="container">
           <div className="about__content">
